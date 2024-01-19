@@ -20,6 +20,12 @@ namespace CS311ETEEAP2023_A
             this.usertype = usertype;       
         }
 
+        private void accountsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserAccounts useraccounts = new UserAccounts();
+            useraccounts.Show();
+        }
+
         private void Frmmain_Load(object sender, EventArgs e)
         {
             toolStripStatusLabel1.Text = "Username:" + username;
